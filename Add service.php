@@ -358,7 +358,7 @@ $jenis_list = [
         <div style="text-align:center;padding:2rem;color:var(--muted)">
           <p style="font-size:2rem">🚗</p>
           <p>Kamu belum punya kendaraan.<br>
-            <a href="Add vehicle.php" style="color:var(--accent)">Tambah kendaraan dulu →</a>
+            <a href="add_vehicle.php" style="color:var(--accent)">Tambah kendaraan dulu →</a>
           </p>
         </div>
       <?php else: ?>
