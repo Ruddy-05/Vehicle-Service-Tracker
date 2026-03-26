@@ -699,7 +699,7 @@ function tgl_id($date)
       <div class="section">
         <div class="section-header">
           <span class="section-title">Kendaraan Saya</span>
-          <a href="add_vehicle.php" class="btn btn-ghost btn-sm">+ Tambah</a>
+          <a href="Add_vehicle.php" class="btn btn-ghost btn-sm">+ Tambah</a>
         </div>
         <?php if (empty($vehicles)): ?>
           <div class="empty-state">
