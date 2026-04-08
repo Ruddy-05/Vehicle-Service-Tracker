@@ -622,7 +622,7 @@ function tgl_id($date)
     <a href="dashboard.php" class="nav-link active">
       <span class="icon">📊</span> Dashboard
     </a>
-    <a href="Add vehicle.php" class="nav-link">
+    <a href="add_vehicle.php" class="nav-link">
       <span class="icon">🚗</span> Tambah Kendaraan
     </a>
     <a href="add_service.php" class="nav-link">
@@ -649,7 +649,7 @@ function tgl_id($date)
         <h1 class="page-title">Halo, <?= htmlspecialchars($username) ?>! 👋</h1>
         <p class="page-date"><?= date('l, d F Y') ?></p>
       </div>
-      <a href="Add_service.php" class="btn btn-primary">+ Catat Servis</a>
+      <a href="add_service.php" class="btn btn-primary">+ Catat Servis</a>
     </div>
 
     <!-- ── Stats ── -->
@@ -699,7 +699,7 @@ function tgl_id($date)
       <div class="section">
         <div class="section-header">
           <span class="section-title">Kendaraan Saya</span>
-          <a href="Add_vehicle.php" class="btn btn-ghost btn-sm">+ Tambah</a>
+          <a href="add_vehicle.php" class="btn btn-ghost btn-sm">+ Tambah</a>
         </div>
         <?php if (empty($vehicles)): ?>
           <div class="empty-state">
@@ -718,7 +718,7 @@ function tgl_id($date)
               </div>
               <span class="badge badge-<?= $v['jenis'] ?>"><?= $v['jenis'] ?></span>
               <div class="vehicle-actions">
-                <a href="Add_service.php?vid=<?= $v['id'] ?>" class="btn btn-sm btn-primary">+ Servis</a>
+                <a href="add_service.php?vid=<?= $v['id'] ?>" class="btn btn-sm btn-primary">+ Servis</a>
                 <a href="delete_vehicle.php?id=<?= $v['id'] ?>"
                   class="btn btn-sm btn-danger"
                   onclick="return confirm('Hapus kendaraan ini? Semua riwayat servisnya juga akan terhapus.')">🗑</a>
@@ -775,7 +775,7 @@ function tgl_id($date)
         <div class="empty-state">
           <div class="emoji">📋</div>
           <p>Belum ada catatan servis.<br>
-            <a href="Add_service.php" style="color:var(--accent)">Catat servis pertama kamu →</a>
+            <a href="add_service.php" style="color:var(--accent)">Catat servis pertama kamu →</a>
           </p>
         </div>
       <?php else: ?>
