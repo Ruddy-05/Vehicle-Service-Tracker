@@ -14,7 +14,7 @@ $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 // Cek koneksi
 if ($conn->connect_error) {
-  die('<div style="font-family:sans-serif;padding:2rem;color:red;">
+    die('<div style="font-family:sans-serif;padding:2rem;color:red;">
         <h2>❌ Koneksi Database Gagal</h2>
         <p>' . $conn->connect_error . '</p>
         <p>Pastikan XAMPP/MySQL sudah berjalan dan database sudah dibuat.</p>
